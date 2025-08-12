@@ -19,8 +19,11 @@
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+body { @apply antialiased; }
+
+.smooth-scroll { scroll-behavior: smooth; }
+
+.btn-primary { @apply rounded-full bg-[#0F1D66] text-white px-5 py-3 font-semibold hover:bg-[#122891]; }
+.btn-outline { @apply rounded-full border border-[#0F1D66]/30 px-5 py-3 font-semibold text-[#0F1D66] hover:bg-[#0F1D66] hover:text-white; }
+
+@keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
