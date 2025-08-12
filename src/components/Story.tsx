@@ -7,10 +7,10 @@ export default function Story() {
     <section id="story" className="bg-white">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-start">
         <FadeIn>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F1D66]">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-espresso">
             Bitter & Bloom — From soil to soul
           </h2>
-          <div className="mt-6 space-y-5 text-[#0F1D66]/90 leading-relaxed">
+          <div className="mt-6 space-y-5 text-espresso/90 leading-relaxed">
             <p>
               Founded in 2017 by Ava Larkins, a former landscape architect, Bitter &
               Bloom is a Fitzroy coffee space that treats cultivation and brewing as

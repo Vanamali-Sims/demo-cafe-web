@@ -13,7 +13,7 @@ export default function Badges() {
           {[...items, ...items].map((i, idx) => (
             <div
               key={`${i.title}-${idx}`}
-              className="text-sm font-semibold text-[#0F1D66] opacity-80 hover:opacity-100 transition-opacity"
+              className="text-sm font-semibold text-espresso opacity-80 hover:opacity-100 transition-opacity"
             >
               {i.title}
             </div>

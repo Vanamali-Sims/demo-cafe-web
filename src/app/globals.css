@@ -1,29 +1,43 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Brand palette */
+  --espresso: #4B2E2A;
+  --latte: #EDE6DC;
+  --sage: #8A9A5B;
+  --peach: #E0A899;
+  --terra: #C97C67;
+
+  /* Base colors */
+  --background: var(--latte);
+  --foreground: var(--espresso);
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-espresso: var(--espresso);
+  --color-latte: var(--latte);
+  --color-sage: var(--sage);
+  --color-peach: var(--peach);
+  --color-terra: var(--terra);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #1a1514;
+    --foreground: #f6f2ec;
   }
 }
 
-body { @apply antialiased; }
+body { @apply antialiased bg-background text-foreground; }
 
 .smooth-scroll { scroll-behavior: smooth; }
 
-.btn-primary { @apply rounded-full bg-[#0F1D66] text-white px-5 py-3 font-semibold hover:bg-[#122891]; }
-.btn-outline { @apply rounded-full border border-[#0F1D66]/30 px-5 py-3 font-semibold text-[#0F1D66] hover:bg-[#0F1D66] hover:text-white; }
+.btn-primary { @apply rounded-full bg-sage text-espresso px-5 py-3 font-semibold hover:bg-peach transition-colors; }
+.btn-cta { @apply rounded-full bg-terra text-white px-5 py-3 font-semibold hover:brightness-110 transition-colors; }
+.btn-outline { @apply rounded-full border border-espresso/30 px-5 py-3 font-semibold text-espresso hover:bg-espresso hover:text-latte transition-colors; }
 
 @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }

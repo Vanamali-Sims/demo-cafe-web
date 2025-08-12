@@ -39,7 +39,7 @@ export default function Favorites() {
   return (
     <section className="bg-white" id="favorites">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F1D66] text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-espresso text-center">
           Bitter & Bloom Favorites
         </h2>
         <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -53,11 +53,11 @@ export default function Favorites() {
                 <Image src={c.image} alt={c.title} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
               </div>
               <div className="p-5">
-                <h3 className="font-semibold text-lg text-[#0F1D66]">{c.title}</h3>
-                <p className="text-sm text-[#0F1D66]/70 mt-1">{c.notes}</p>
+                <h3 className="font-semibold text-lg text-espresso">{c.title}</h3>
+                <p className="text-sm text-espresso/70 mt-1">{c.notes}</p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="font-bold text-[#0F1D66]">{c.price}</span>
-                  <button className="rounded-full bg-[#0F1D66] text-white px-4 py-2 text-sm font-semibold hover:bg-[#122891] transition-colors group-hover:translate-x-0.5 will-change-transform">
+                  <span className="font-bold text-espresso">{c.price}</span>
+                  <button className="btn-cta text-sm group-hover:translate-x-0.5 will-change-transform">
                     Learn more
                   </button>
                 </div>

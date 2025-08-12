@@ -47,8 +47,8 @@ export default function Coffees() {
     <section id="coffees" className="bg-white">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
         <div className="flex items-center justify-between">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-[#0F1D66]">Our Coffees</h2>
-          <a href="#shop-all" className="rounded-full border border-[#0F1D66]/20 px-5 py-2 font-semibold text-[#0F1D66] hover:bg-[#0F1D66] hover:text-white">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-espresso">Our Coffees</h2>
+          <a href="#shop-all" className="btn-outline">
             Shop All Coffees
           </a>
         </div>
@@ -63,12 +63,12 @@ export default function Coffees() {
                 <Image src={c.image} alt={c.title} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
               </div>
               <div className="p-5">
-                <p className="text-xs uppercase tracking-wide text-[#0F1D66]/70">{c.origin}</p>
-                <h3 className="mt-1 text-xl font-bold text-[#0F1D66]">{c.title}</h3>
-                <p className="mt-1 text-sm text-[#0F1D66]/70">{c.notes}</p>
+                <p className="text-xs uppercase tracking-wide text-espresso/70">{c.origin}</p>
+                <h3 className="mt-1 text-xl font-bold text-espresso">{c.title}</h3>
+                <p className="mt-1 text-sm text-espresso/70">{c.notes}</p>
                 <div className="mt-4 flex items-center justify-between">
-                  <span className="font-bold text-[#0F1D66]">{c.price}</span>
-                  <button className="rounded-full bg-[#0F1D66] text-white px-4 py-2 text-sm font-semibold hover:bg-[#122891] transition-colors group-hover:translate-x-0.5">
+                  <span className="font-bold text-espresso">{c.price}</span>
+                  <button className="btn-cta text-sm transition-colors group-hover:translate-x-0.5">
                     Add to Cart
                   </button>
                 </div>
