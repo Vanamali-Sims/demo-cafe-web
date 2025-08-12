@@ -21,8 +21,8 @@
   --color-sage: var(--sage);
   --color-peach: var(--peach);
   --color-terra: var(--terra);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --font-heading: var(--font-heading);
+  --font-body: var(--font-body);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -32,7 +32,8 @@
   }
 }
 
-body { @apply antialiased bg-background text-foreground; }
+body { @apply antialiased bg-background text-foreground; font-family: var(--font-body), ui-sans-serif, system-ui; }
+h1,h2,h3,h4,h5,h6 { font-family: var(--font-heading), ui-serif, Georgia; letter-spacing: -0.01em; }
 
 .smooth-scroll { scroll-behavior: smooth; }
 

@@ -14,12 +14,13 @@ export default function Home() {
       <Header />
       <main>
         <Hero />
-        <Badges />
         <Favorites />
-        <Testimonials />
+        <Favorites />
+        <Badges />
         <Subscribe />
         <Coffees />
         <Story />
+        <Testimonials />
       </main>
       <Footer />
     </div>
