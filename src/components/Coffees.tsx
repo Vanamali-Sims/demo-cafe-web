@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 import cofeee2 from "../../assets/cofeee2.webp";
 import coffee2 from "../../assets/coffee2.webp";
 import snacks1 from "../../assets/snacks1.webp";
@@ -10,7 +11,7 @@ type Coffee = {
   notes: string;
   roast: string;
   price: string;
-  image: any;
+  image: StaticImageData;
 };
 
 const coffees: Coffee[] = [

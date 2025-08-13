@@ -1,5 +1,6 @@
 
 import Image from "next/image";
+import type { StaticImageData } from "next/image";
 import FadeIn from "./FadeIn";
 import coffee1 from "../../assets/coffee1.webp";
 import coffee2 from "../../assets/coffee2.webp";
@@ -9,7 +10,7 @@ type Card = {
   title: string;
   price: string;
   notes: string;
-  image: any;
+  image: StaticImageData;
 };
 
 const cards: Card[] = [
