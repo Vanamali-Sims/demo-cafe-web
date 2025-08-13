@@ -43,22 +43,22 @@ export default function Favorites() {
         <h2 className="text-3xl md:text-4xl font-extrabold text-espresso text-center">
           Bitter & Bloom Favorites
         </h2>
-        <div className="mt-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {cards.map((c) => (
             <FadeIn key={c.title}>
               <article
               key={c.title}
-              className="group rounded-xl overflow-hidden border shadow-sm transition-shadow hover:shadow-lg focus-within:shadow-lg"
+              className="group rounded-xl overflow-hidden border shadow-sm transition-transform hover:shadow-lg focus-within:shadow-lg hover:-translate-y-0.5 active:-translate-y-0.5"
             >
-              <div className="relative h-56 overflow-hidden">
-                <Image src={c.image} alt={c.title} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
+              <div className="relative h-48 sm:h-56 overflow-hidden">
+                <Image src={c.image} alt={c.title} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03] active:scale-[1.03]" />
               </div>
               <div className="p-5">
                 <h3 className="font-semibold text-lg text-espresso">{c.title}</h3>
                 <p className="text-sm text-espresso/70 mt-1">{c.notes}</p>
                 <div className="mt-4 flex items-center justify-between">
                   <span className="font-bold text-espresso">{c.price}</span>
-                  <button className="btn-cta text-sm group-hover:translate-x-0.5 will-change-transform">
+                  <button className="btn-cta text-sm group-hover:translate-x-0.5 active:translate-x-0.5 will-change-transform">
                     Learn more
                   </button>
                 </div>

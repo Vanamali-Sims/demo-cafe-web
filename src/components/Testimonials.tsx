@@ -32,11 +32,11 @@ export default function Testimonials() {
         <h2 className="text-3xl md:text-4xl font-extrabold text-espresso text-center">
           What our customers are saying
         </h2>
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
           {testimonials.map((t) => (
             <blockquote
               key={t.author}
-              className="rounded-2xl bg-latte/80 p-6 shadow-sm border border-espresso/10 transition-transform hover:-translate-y-0.5 hover:shadow-md"
+              className="rounded-2xl bg-latte/80 p-6 shadow-sm border border-espresso/10 transition-transform hover:-translate-y-0.5 active:-translate-y-0.5 hover:shadow-md"
             >
               <p className="text-espresso font-medium">“{t.quote}”</p>
               <footer className="mt-4 text-sm text-espresso/70">

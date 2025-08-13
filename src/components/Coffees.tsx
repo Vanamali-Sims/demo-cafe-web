@@ -53,14 +53,14 @@ export default function Coffees() {
             Shop All Coffees
           </a>
         </div>
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="mt-8 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
           {coffees.map((c, idx) => (
             <FadeIn key={c.title} delayMs={idx * 100}>
             <article
               key={c.title}
-              className="group border rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 will-change-transform"
+              className="group border rounded-xl overflow-hidden shadow-sm transition-all hover:shadow-lg hover:-translate-y-0.5 active:-translate-y-0.5 will-change-transform"
             >
-              <div className="relative h-64 overflow-hidden">
+              <div className="relative h-56 sm:h-64 overflow-hidden transition-transform duration-500 will-change-transform active:scale-[1.03]">
                 <Image src={c.image} alt={c.title} fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03]" />
               </div>
               <div className="p-5">
@@ -69,7 +69,7 @@ export default function Coffees() {
                 <p className="mt-1 text-sm text-espresso/70">{c.notes}</p>
                 <div className="mt-4 flex items-center justify-between">
                   <span className="font-bold text-espresso">{c.price}</span>
-                  <button className="btn-cta text-sm transition-colors group-hover:translate-x-0.5">
+                  <button className="btn-cta text-sm transition-colors group-hover:translate-x-0.5 active:translate-x-0.5">
                     Add to Cart
                   </button>
                 </div>

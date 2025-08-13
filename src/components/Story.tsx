@@ -5,7 +5,7 @@ import coffeeshop2 from "../../assets/coffeeshop2.webp";
 export default function Story() {
   return (
     <section id="story" className="bg-white">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-16 grid md:grid-cols-2 gap-10 items-start">
+      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-12 md:py-16 grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-10 items-start">
         <FadeIn>
           <h2 className="text-3xl md:text-4xl font-extrabold text-espresso">
             Bitter & Bloom — From soil to soul
@@ -35,7 +35,7 @@ export default function Story() {
           </div>
         </FadeIn>
         <FadeIn delayMs={150}>
-          <div className="relative w-full h-72 md:h-full min-h-72">
+          <div className="relative w-full h-64 sm:h-72 md:h-full min-h-64 md:min-h-72">
             <Image src={coffeeshop2} alt="Hidden courtyard" fill className="rounded-2xl shadow-md object-cover" />
           </div>
         </FadeIn>

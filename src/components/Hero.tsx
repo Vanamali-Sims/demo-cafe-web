@@ -19,7 +19,7 @@ export default function Hero() {
   return (
     <section className="relative isolate overflow-hidden bg-espresso text-latte">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16">
-        <div className="flex items-center justify-between pb-8">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-8 pb-8">
           <div className="max-w-2xl">
             <p className="uppercase tracking-widest text-sm text-latte/80">It’s officially</p>
             <h1 className="mt-2 text-4xl sm:text-6xl font-extrabold leading-tight">
@@ -33,13 +33,13 @@ export default function Hero() {
               <a href="#coffees" className="btn-primary">
                 Shop Cold Brews
               </a>
-              <a href="#quiz" className="btn-outline">
+              <a href="#quiz" className="btn-outline active:scale-[0.99]">
                 Find your fave
               </a>
             </div>
           </div>
-          <div ref={parallaxRef} className="hidden md:block relative w-[420px] h-[320px] rounded-lg overflow-hidden shadow-lg">
-            <Image src={coffeeshop1} alt="Bitter & Bloom cafe" fill className="object-cover" />
+          <div ref={parallaxRef} className="w-full md:w-[420px] h-56 md:h-[320px] rounded-lg overflow-hidden shadow-lg">
+            <Image src={coffeeshop1} alt="Bitter & Bloom cafe" fill className="object-cover transition-transform duration-500 group-hover:scale-[1.03] active:scale-[1.03]" />
           </div>
         </div>
       </div>
